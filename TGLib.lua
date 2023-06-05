@@ -544,8 +544,8 @@ end
 
 
 function Elements:CreateToggle(TogName,Callback)
- local toggled = false  
-  Callback = Callback or function() end 
+                         local toggled = false  
+                          local debounce = false
 local TogFrame_1 = Instance.new("Frame")
 
 local UICorner_7 = Instance.new("UICorner")
