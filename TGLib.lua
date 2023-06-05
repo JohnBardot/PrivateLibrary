@@ -365,8 +365,6 @@ ElementHolder_1.Size = UDim2.new(0, 197,0, 368)
 
 ElementHolder_1.ClipsDescendants = true
 
-ElementHolder_1.AutomaticCanvasSize = Enum.AutomaticSize.None
-
 ElementHolder_1.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
 
 ElementHolder_1.CanvasPosition = Vector2.new(0, 0)
@@ -381,13 +379,16 @@ ElementHolder_1.ScrollBarImageTransparency = 1
 
 ElementHolder_1.ScrollBarThickness = 1
 
-ElementHolder_1.ScrollingDirection = Enum.ScrollingDirection.XY
+
 
 ElementHolder_1.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
 
 ElementHolder_1.VerticalScrollBarInset = Enum.ScrollBarInset.None
 
 ElementHolder_1.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+
+ElementHolder_1.AutomaticCanvasSize = Enum.AutomaticSize.Y 
+  ElementHolder_1.ScrollingDirection = Enum.ScrollingDirection.XY 
 
 UICorner_11.Parent = Section_1
 
