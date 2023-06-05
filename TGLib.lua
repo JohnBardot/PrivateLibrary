@@ -369,7 +369,7 @@ ElementHolder_1.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
 
 ElementHolder_1.CanvasPosition = Vector2.new(0, 0)
 
-ElementHolder_1.ElasticBehavior = Enum.ElasticBehavior.Y
+ElementHolder_1.ElasticBehavior = Enum.ElasticBehavior.Never
 
 ElementHolder_1.HorizontalScrollBarInset = Enum.ScrollBarInset.None
 
