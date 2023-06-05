@@ -637,18 +637,24 @@ UICorner_8.CornerRadius = UDim.new(0,5)
 UIPadding_5.Parent = TogFrame_1
 
 UIPadding_5.PaddingRight = UDim.new(0,3)
-
- local tog = false  
   
-                          BtnBtn_2.MouseButton1Click:Connect(function()  
-                                  tog = not tog  
-                                  Callback(tog) -- Callbacks whenever we toggle  
-                                  if tog then   
-                                        TogglerHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)  
-                                  else  
-                                       TogglerHolder_1.BackgroundColor3 = Color3.fromRGB(28,28,28)   
+                         BtnBtn_2.MouseButton1Click:Connect(function()  
+                                  if debounce == false then  
+                                          if toggled == false then  
+                                                  debounce = true  
+                                                  TogglerHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+                                                  debounce = false  
+                                                  toggled = true  
+                                                  pcall(Callback, toggled)  
+                                          elseif toggled == true then  
+                                                  debounce = true   
+                                                 TogglerHolder_1.BackgroundColor3 = Color3.fromRGB(28,28,28)  
+                                                  debounce = false  
+                                                  toggled = false  
+                                                  pcall(Callback, toggled)  
+                                          end  
                                   end  
-                          end) 
+                          end)
                           
 end
 function Elements:CreateBox(BoxName,Callback)
