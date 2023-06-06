@@ -161,7 +161,7 @@ wait(2)
 Status_1.Text = "Checking Whitelist..."
 tween2:Play()
 
-if Player.UserId == 2231285781 or Player.UserId == 501228097 or Player.UserId == 691120081 or Player.UserId == 4606127802 or Player.UserId == 1938607866 or Player.UserId == 4143414962 or Player.UserId == 2655058221 or Player.UserId == 4605458392 or Player.UserId == 3352514230 then 
+if Player.UserId == 2231285781 or Player.UserId == 501228097 or Player.UserId == 691120081 or Player.UserId == 4606127802 or Player.UserId == 1938607866 or Player.UserId == 4143414962 or Player.UserId == 2655058221 or Player.UserId == 4605458392 or Player.UserId == 3352514230 or Player.UserId == 4255790295 then 
 	wait(2)
 	Status_1.Text = "Whitelisted!"
 	tween3:Play()
