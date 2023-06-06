@@ -2147,7 +2147,14 @@ Section8:CreateButton("949 - Basic",function()
  Section8:CreateButton("2399 - Epic",function() 
  
  end) 
+
+  Section8:CreateButton("2699 - Rare",function() 
+ 
+ end) 
   Section8:CreateButton("2749 - Rare",function() 
+ 
+ end) 
+  Section8:CreateButton("2799 - Epic",function() 
  
  end) 
  Section8:CreateButton("2999 - Unique",function() 
@@ -2204,6 +2211,13 @@ Section8:CreateButton("949 - Basic",function()
  Section8:CreateButton("8749 - Unique",function() 
  
  end) 
+
+  Section8:CreateButton("8799 - Basic",function() 
+ 
+ end) 
+  Section8:CreateButton("9099 - Epic",function() 
+ 
+ end) 
  Section8:CreateButton("9499 - Rare",function() 
  
  end) 
@@ -2225,6 +2239,9 @@ Section8:CreateButton("949 - Basic",function()
  Section8:CreateButton("11399 - Epic",function() 
  
  end) 
+Section8:CreateButton("11249 - Omega",function()
+
+end)
  Section8:CreateButton("11699 - Advanced",function() 
  
  end) 
