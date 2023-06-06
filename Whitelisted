@@ -178,5 +178,6 @@ else
 	wait(2)
 	Status_1.Text = "The script will be destroyed!"
 	tween4:Play()
+wait(2)
 	game.CoreGui:FindFirstChild("WLCheck"):Destroy()
 end
