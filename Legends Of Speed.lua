@@ -27,7 +27,7 @@ game:GetService('ReplicatedStorage').raceStarted.Changed:Connect(function()
 end)
   
 --《 Window 》--
-local Window = Library:CreateWindow("Game: Legends Of Speed | Status: Online | UserID: " ..game:GetService("Players").LocalPlayer.UserId)
+local Window = Library:CreateWindow("Game: Legends Of Speed | Status: Online | v1.0.0 | UserID: " ..game:GetService("Players").LocalPlayer.UserId)
 
 --《 Tabs 》--
 local Tab1 = Window:CreateTab("Main")
