@@ -15,7 +15,7 @@ TimeHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
 TimeHolder_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
 TimeHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
 TimeHolder_1.BorderSizePixel = 0
-TimeHolder_1.Position = UDim2.new(0.5, 0,0, 25)
+TimeHolder_1.Position = UDim2.new(0.5, 0,0, 15)
 TimeHolder_1.Size = UDim2.new(0, 96,0, 44)
 
 CurrentTime_1.Name = "CurrentTime"
