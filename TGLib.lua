@@ -13,7 +13,7 @@ local UICorner_2 = Instance.new("UICorner")
 
 -- Properties:
 Time.Name = "Time"
-Time.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Time.Parent = game.CoreGui
 
 TimeHolder_1.Name = "TimeHolder"
 TimeHolder_1.Parent = Time
