@@ -24,6 +24,7 @@ local UICorner_7 = Instance.new("UICorner")
 -- Properties:
 WLCheck.Name = "WLCheck"
 WLCheck.Parent = game.CoreGui
+WLCheck.Enabled = true
 
 Info_1.Name = "Info"
 Info_1.Parent = WLCheck
@@ -169,9 +170,9 @@ if Player.UserId == 2231285781 or Player.UserId == 501228097 or Player.UserId ==
 	Status_1.Text = "Loading Script!"
 	tween4:Play()
 	wait(2)
+	WLCheck.Enabled = false
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnBardot/PrivateLibrary/main/Legends%20Of%20Speed.lua"))()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnBardot/PrivateLibrary/main/TIME"))()
-	game.CoreGui:FindFirstChild("WLCheck"):Destroy()
 else
 	wait(2)
 	Status_1.Text = "Not Whitelisted!"
