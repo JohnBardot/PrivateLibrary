@@ -1,7 +1,10 @@
 local TweenService = game:GetService("TweenService")
 local Player = game.Players.LocalPlayer
 
-local Time = Instance.new("ScreenGui")
+local Library = {}
+function Library:CreateWindow(WinName)
+
+	local Time = Instance.new("ScreenGui")
 local TimeHolder_1 = Instance.new("Frame")
 local CurrentTime_1 = Instance.new("Frame")
 local UICorner_1 = Instance.new("UICorner")
@@ -54,10 +57,7 @@ while true do
 	Time_1.Text = result
 	wait(1)
 end
-
-local Library = {}
-function Library:CreateWindow(WinName)
-
+	
 local TGLib = Instance.new("ScreenGui")
 
 local Main_1 = Instance.new("Frame")
