@@ -153,7 +153,8 @@ Close_1.TextColor3 = Color3.fromRGB(255,255,255)
 
 Close_1.TextSize = 18
  Close_1.MouseButton1Click:Connect(function()  
-                  game.CoreGui:FindFirstChild("TGLib"):Destroy()  
+                  game.CoreGui:FindFirstChild("TGLib"):Destroy() 
+game.CoreGui:FindFirstChild("Time"):Destroy()  
           end) 
 
 
