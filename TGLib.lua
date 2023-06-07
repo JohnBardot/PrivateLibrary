@@ -49,14 +49,6 @@ Time_1.TextSize = 13
 
 UICorner_2.Parent = TimeHolder_1
 UICorner_2.CornerRadius = UDim.new(0,5)
-
-while true do
-	local TimeInUnix = os.time()
-	local stringToFormat = "%I:%M %p"
-	local result = os.date(stringToFormat, TimeInUnix)
-	Time_1.Text = result
-	wait(1)
-end
 	
 local TGLib = Instance.new("ScreenGui")
 
@@ -844,5 +836,12 @@ end
 return Sections
 end
 return Tabs
+end
+while true do
+	local TimeInUnix = os.time()
+	local stringToFormat = "%I:%M %p"
+	local result = os.date(stringToFormat, TimeInUnix)
+	Time_1.Text = result
+	wait(1)
 end
 return Library
