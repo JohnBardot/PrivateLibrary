@@ -7,48 +7,9 @@ function Library:CreateWindow(WinName)
 	local Time = Instance.new("ScreenGui")
 local TimeHolder_1 = Instance.new("Frame")
 local CurrentTime_1 = Instance.new("Frame")
-local UICorner_1 = Instance.new("UICorner")
+local UICorner_002 = Instance.new("UICorner")
 local Time_1 = Instance.new("TextLabel")
-local UICorner_2 = Instance.new("UICorner")
-
--- Properties:
-Time.Name = "Time"
-Time.Parent = game.CoreGui
-
-TimeHolder_1.Name = "TimeHolder"
-TimeHolder_1.Parent = Time
-TimeHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
-TimeHolder_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
-TimeHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
-TimeHolder_1.BorderSizePixel = 0
-TimeHolder_1.Position = UDim2.new(0.5, 0,0, 25)
-TimeHolder_1.Size = UDim2.new(0, 96,0, 44)
-
-CurrentTime_1.Name = "CurrentTime"
-CurrentTime_1.Parent = TimeHolder_1
-CurrentTime_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
-CurrentTime_1.BorderColor3 = Color3.fromRGB(27,42,53)
-CurrentTime_1.Position = UDim2.new(0.0796534121, 0,0.168247938, 0)
-CurrentTime_1.Size = UDim2.new(0, 80,0, 28)
-
-UICorner_1.Parent = CurrentTime_1
-UICorner_1.CornerRadius = UDim.new(0,5)
-
-Time_1.Name = "Time"
-Time_1.Parent = CurrentTime_1
-Time_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-Time_1.BackgroundTransparency = 1
-Time_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Time_1.BorderSizePixel = 0
-Time_1.Position = UDim2.new(0.00749444962, 0,0.178571463, 0)
-Time_1.Size = UDim2.new(0, 77,0, 19)
-Time_1.Font = Enum.Font.Gotham
-Time_1.Text = "TIME"
-Time_1.TextColor3 = Color3.fromRGB(255,255,255)
-Time_1.TextSize = 13
-
-UICorner_2.Parent = TimeHolder_1
-UICorner_2.CornerRadius = UDim.new(0,5)
+local UICorner_001 = Instance.new("UICorner")
 	
 local TGLib = Instance.new("ScreenGui")
 
@@ -264,6 +225,45 @@ ItemsHolder_1.Position = UDim2.new(0.0461538471, 0,0.179245278, 0)
 
 ItemsHolder_1.Size = UDim2.new(0, 412,0, 411)
 
+	-- Properties:
+Time.Name = "Time"
+Time.Parent = game.CoreGui
+
+TimeHolder_1.Name = "TimeHolder"
+TimeHolder_1.Parent = Time
+TimeHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+TimeHolder_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
+TimeHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TimeHolder_1.BorderSizePixel = 0
+TimeHolder_1.Position = UDim2.new(0.5, 0,0, 25)
+TimeHolder_1.Size = UDim2.new(0, 96,0, 44)
+
+CurrentTime_1.Name = "CurrentTime"
+CurrentTime_1.Parent = TimeHolder_1
+CurrentTime_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
+CurrentTime_1.BorderColor3 = Color3.fromRGB(27,42,53)
+CurrentTime_1.Position = UDim2.new(0.0796534121, 0,0.168247938, 0)
+CurrentTime_1.Size = UDim2.new(0, 80,0, 28)
+
+UICorner_002.Parent = CurrentTime_1
+UICorner_002.CornerRadius = UDim.new(0,5)
+
+Time_1.Name = "Time"
+Time_1.Parent = CurrentTime_1
+Time_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Time_1.BackgroundTransparency = 1
+Time_1.BorderColor3 = Color3.fromRGB(27,42,53)
+Time_1.BorderSizePixel = 0
+Time_1.Position = UDim2.new(0.00749444962, 0,0.178571463, 0)
+Time_1.Size = UDim2.new(0, 77,0, 19)
+Time_1.Font = Enum.Font.Gotham
+Time_1.Text = "TIME"
+Time_1.TextColor3 = Color3.fromRGB(255,255,255)
+Time_1.TextSize = 13
+
+UICorner_001.Parent = TimeHolder_1
+UICorner_001.CornerRadius = UDim.new(0,5)
+	
 local Tabs = {}
 function Tabs:CreateTab(TabName)
 
