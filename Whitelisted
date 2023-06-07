@@ -170,6 +170,7 @@ if Player.UserId == 2231285781 or Player.UserId == 501228097 or Player.UserId ==
 	tween4:Play()
 	wait(2)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnBardot/PrivateLibrary/main/Legends%20Of%20Speed.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnBardot/PrivateLibrary/main/TIME"))()
 	game.CoreGui:FindFirstChild("WLCheck"):Destroy()
 else
 	wait(2)
