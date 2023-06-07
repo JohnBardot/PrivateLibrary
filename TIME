@@ -1,151 +1,151 @@
--- GUI to Lua 
--- Version: 0.0.3
-
--- Instances:
-
-local STATS = Instance.new("ScreenGui")
-local TimeHolder_1 = Instance.new("Frame")
-local UICorner_1 = Instance.new("UICorner")
-local UIListLayout_1 = Instance.new("UIListLayout")
-local UIPadding_1 = Instance.new("UIPadding")
-local Username_1 = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local UsernameTxt_1 = Instance.new("TextLabel")
-local UID_1 = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local UIDTxt_1 = Instance.new("TextLabel")
-local Time_1 = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local TimeTxt_1 = Instance.new("TextLabel")
-local VERSION_1 = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local VERSIONTxt_1 = Instance.new("TextLabel")
-
--- Properties:
-STATS.Name = "STATS"
-STATS.Parent = game.CoreGui
-
-TimeHolder_1.Name = "TimeHolder"
-TimeHolder_1.Parent = STATS
-TimeHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
-TimeHolder_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
-TimeHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
-TimeHolder_1.BorderSizePixel = 0
-TimeHolder_1.Position = UDim2.new(0.5, 0,0, 3)
-TimeHolder_1.Size = UDim2.new(0, 431,0, 44)
-
-UICorner_1.Parent = TimeHolder_1
-UICorner_1.CornerRadius = UDim.new(0,5)
-
-UIListLayout_1.Parent = TimeHolder_1
-UIListLayout_1.Padding = UDim.new(0,8)
-UIListLayout_1.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
-
-UIPadding_1.Parent = TimeHolder_1
-UIPadding_1.PaddingLeft = UDim.new(0,9)
-UIPadding_1.PaddingTop = UDim.new(0,8)
-
-Username_1.Name = "Username"
-Username_1.Parent = TimeHolder_1
-Username_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
-Username_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Username_1.Position = UDim2.new(0.0146882227, 0,0.1682477, 0)
-Username_1.Size = UDim2.new(0, 104,0, 28)
-
-UICorner_2.Parent = Username_1
-UICorner_2.CornerRadius = UDim.new(0,5)
-
-UsernameTxt_1.Name = "UsernameTxt"
-UsernameTxt_1.Parent = Username_1
-UsernameTxt_1.AnchorPoint = Vector2.new(0.5, 0.5)
-UsernameTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-UsernameTxt_1.BackgroundTransparency = 1
-UsernameTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
-UsernameTxt_1.BorderSizePixel = 0
-UsernameTxt_1.Position = UDim2.new(0.5, 0,0.5, 0)
-UsernameTxt_1.Size = UDim2.new(0, 104,0, 28)
-UsernameTxt_1.Font = Enum.Font.Gotham
-UsernameTxt_1.Text = game:GetService("Players").LocalPlayer.Name
-UsernameTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
-UsernameTxt_1.TextSize = 13
-
-UID_1.Name = "UID"
-UID_1.Parent = TimeHolder_1
-UID_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
-UID_1.BorderColor3 = Color3.fromRGB(27,42,53)
-UID_1.Position = UDim2.new(0.280742466, 0,0.181818187, 0)
-UID_1.Size = UDim2.new(0, 104,0, 28)
-
-UICorner_3.Parent = UID_1
-UICorner_3.CornerRadius = UDim.new(0,5)
-
-UIDTxt_1.Name = "UIDTxt"
-UIDTxt_1.Parent = UID_1
-UIDTxt_1.AnchorPoint = Vector2.new(0.5, 0.5)
-UIDTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-UIDTxt_1.BackgroundTransparency = 1
-UIDTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
-UIDTxt_1.BorderSizePixel = 0
-UIDTxt_1.Position = UDim2.new(0.491253197, 0,0.5, 0)
-UIDTxt_1.Size = UDim2.new(0, 97,0, 28)
-UIDTxt_1.Font = Enum.Font.Gotham
-UIDTxt_1.Text = game:GetService("Players").LocalPlayer.UserId
-UIDTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
-UIDTxt_1.TextSize = 13
-
-Time_1.Name = "Time"
-Time_1.Parent = TimeHolder_1
-Time_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
-Time_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Time_1.Position = UDim2.new(0.54060322, 0,0.181818187, 0)
-Time_1.Size = UDim2.new(0, 76,0, 28)
-
-UICorner_4.Parent = Time_1
-UICorner_4.CornerRadius = UDim.new(0,5)
-
-TimeTxt_1.Name = "TimeTxt"
-TimeTxt_1.Parent = Time_1
-TimeTxt_1.AnchorPoint = Vector2.new(0.5, 0.5)
-TimeTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-TimeTxt_1.BackgroundTransparency = 1
-TimeTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
-TimeTxt_1.BorderSizePixel = 0
-TimeTxt_1.Position = UDim2.new(0.518448174, 0,0.5, 0)
-TimeTxt_1.Size = UDim2.new(0, 73,0, 28)
-TimeTxt_1.Font = Enum.Font.Gotham
-TimeTxt_1.Text = "TIME PM"
-TimeTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
-TimeTxt_1.TextSize = 13
-
-VERSION_1.Name = "VERSION"
-VERSION_1.Parent = TimeHolder_1
-VERSION_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
-VERSION_1.BorderColor3 = Color3.fromRGB(27,42,53)
-VERSION_1.Position = UDim2.new(0.671300709, 0,0.168247968, 0)
-VERSION_1.Size = UDim2.new(0, 104,0, 28)
-
-UICorner_5.Parent = VERSION_1
-UICorner_5.CornerRadius = UDim.new(0,5)
-
-VERSIONTxt_1.Name = "VERSIONTxt"
-VERSIONTxt_1.Parent = VERSION_1
-VERSIONTxt_1.AnchorPoint = Vector2.new(0.5, 0.5)
-VERSIONTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-VERSIONTxt_1.BackgroundTransparency = 1
-VERSIONTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
-VERSIONTxt_1.BorderSizePixel = 0
-VERSIONTxt_1.Position = UDim2.new(0.5, 0,0.5, 0)
-VERSIONTxt_1.Size = UDim2.new(0, 104,0, 28)
-VERSIONTxt_1.Font = Enum.Font.Gotham
-VERSIONTxt_1.Text = "Version: v1.0.2"
-VERSIONTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
-VERSIONTxt_1.TextSize = 13
-
-while true do
-	local TimeInUnix = os.time()
-	local stringToFormat = "%I:%M %p"
-	local result = os.date(stringToFormat, TimeInUnix)
-	TimeTxt_1.Text = result
-	wait(1)
-end
+-- GUI to Lua  
+ -- Version: 0.0.3 
+  
+ -- Instances: 
+  
+ local STATS = Instance.new("ScreenGui") 
+ local TimeHolder_1 = Instance.new("Frame") 
+ local UICorner_1 = Instance.new("UICorner") 
+ local UIListLayout_1 = Instance.new("UIListLayout") 
+ local UIPadding_1 = Instance.new("UIPadding") 
+ local Username_1 = Instance.new("Frame") 
+ local UICorner_2 = Instance.new("UICorner") 
+ local UsernameTxt_1 = Instance.new("TextLabel") 
+ local UID_1 = Instance.new("Frame") 
+ local UICorner_3 = Instance.new("UICorner") 
+ local UIDTxt_1 = Instance.new("TextLabel") 
+ local Time_1 = Instance.new("Frame") 
+ local UICorner_4 = Instance.new("UICorner") 
+ local TimeTxt_1 = Instance.new("TextLabel") 
+ local VERSION_1 = Instance.new("Frame") 
+ local UICorner_5 = Instance.new("UICorner") 
+ local VERSIONTxt_1 = Instance.new("TextLabel") 
+  
+ -- Properties: 
+ STATS.Name = "STATS" 
+ STATS.Parent = game.CoreGui 
+  
+ TimeHolder_1.Name = "TimeHolder" 
+ TimeHolder_1.Parent = STATS 
+ TimeHolder_1.AnchorPoint = Vector2.new(0.5, 0.5) 
+ TimeHolder_1.BackgroundColor3 = Color3.fromRGB(53,53,53) 
+ TimeHolder_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ TimeHolder_1.BorderSizePixel = 0 
+ TimeHolder_1.Position = UDim2.new(0.5, 0,0, 0)
+ TimeHolder_1.Size = UDim2.new(0, 431,0, 38) 
+  
+ UICorner_1.Parent = TimeHolder_1 
+ UICorner_1.CornerRadius = UDim.new(0,5) 
+  
+ UIListLayout_1.Parent = TimeHolder_1 
+ UIListLayout_1.Padding = UDim.new(0,8) 
+ UIListLayout_1.FillDirection = Enum.FillDirection.Horizontal 
+ UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder 
+  
+ UIPadding_1.Parent = TimeHolder_1 
+ UIPadding_1.PaddingLeft = UDim.new(0,9) 
+ UIPadding_1.PaddingTop = UDim.new(0,8) 
+  
+ Username_1.Name = "Username" 
+ Username_1.Parent = TimeHolder_1 
+ Username_1.BackgroundColor3 = Color3.fromRGB(28,28,28) 
+ Username_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ Username_1.Position = UDim2.new(0.0146882227, 0,0.1682477, 0) 
+ Username_1.Size = UDim2.new(0, 104,0, 22) 
+  
+ UICorner_2.Parent = Username_1 
+ UICorner_2.CornerRadius = UDim.new(0,5) 
+  
+ UsernameTxt_1.Name = "UsernameTxt" 
+ UsernameTxt_1.Parent = Username_1 
+ UsernameTxt_1.AnchorPoint = Vector2.new(0.5, 0.5) 
+ UsernameTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255) 
+ UsernameTxt_1.BackgroundTransparency = 1 
+ UsernameTxt_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ UsernameTxt_1.BorderSizePixel = 0 
+ UsernameTxt_1.Position = UDim2.new(0.5, 0,0.5, 0) 
+ UsernameTxt_1.Size = UDim2.new(0, 104,0, 22) 
+ UsernameTxt_1.Font = Enum.Font.Gotham 
+ UsernameTxt_1.Text = game:GetService("Players").LocalPlayer.Name 
+ UsernameTxt_1.TextColor3 = Color3.fromRGB(255,255,255) 
+ UsernameTxt_1.TextSize = 13 
+  
+ UID_1.Name = "UID" 
+ UID_1.Parent = TimeHolder_1 
+ UID_1.BackgroundColor3 = Color3.fromRGB(28,28,28) 
+ UID_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ UID_1.Position = UDim2.new(0.280742466, 0,0.181818187, 0) 
+ UID_1.Size = UDim2.new(0, 104,0, 22)
+  
+ UICorner_3.Parent = UID_1 
+ UICorner_3.CornerRadius = UDim.new(0,5) 
+  
+ UIDTxt_1.Name = "UIDTxt" 
+ UIDTxt_1.Parent = UID_1 
+ UIDTxt_1.AnchorPoint = Vector2.new(0.5, 0.5) 
+ UIDTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255) 
+ UIDTxt_1.BackgroundTransparency = 1 
+ UIDTxt_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ UIDTxt_1.BorderSizePixel = 0 
+ UIDTxt_1.Position = UDim2.new(0.5, 0,0.5, 0) 
+ UIDTxt_1.Size = UDim2.new(0, 97,0, 22)
+ UIDTxt_1.Font = Enum.Font.Gotham 
+ UIDTxt_1.Text = game:GetService("Players").LocalPlayer.UserId 
+ UIDTxt_1.TextColor3 = Color3.fromRGB(255,255,255) 
+ UIDTxt_1.TextSize = 13 
+  
+ Time_1.Name = "Time" 
+ Time_1.Parent = TimeHolder_1 
+ Time_1.BackgroundColor3 = Color3.fromRGB(28,28,28) 
+ Time_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ Time_1.Position = UDim2.new(0.54060322, 0,0.181818187, 0) 
+ Time_1.Size = UDim2.new(0, 76,0, 22)
+  
+ UICorner_4.Parent = Time_1 
+ UICorner_4.CornerRadius = UDim.new(0,5) 
+  
+ TimeTxt_1.Name = "TimeTxt" 
+ TimeTxt_1.Parent = Time_1 
+ TimeTxt_1.AnchorPoint = Vector2.new(0.5, 0.5) 
+ TimeTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255) 
+ TimeTxt_1.BackgroundTransparency = 1 
+ TimeTxt_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ TimeTxt_1.BorderSizePixel = 0 
+ TimeTxt_1.Position = UDim2.new(0.5, 0,0.5, 0) 
+ TimeTxt_1.Size = UDim2.new(0, 73,0, 22)
+ TimeTxt_1.Font = Enum.Font.Gotham 
+ TimeTxt_1.Text = "TIME PM" 
+ TimeTxt_1.TextColor3 = Color3.fromRGB(255,255,255) 
+ TimeTxt_1.TextSize = 13 
+  
+ VERSION_1.Name = "VERSION" 
+ VERSION_1.Parent = TimeHolder_1 
+ VERSION_1.BackgroundColor3 = Color3.fromRGB(28,28,28) 
+ VERSION_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ VERSION_1.Position = UDim2.new(0.671300709, 0,0.168247968, 0) 
+ VERSION_1.Size = UDim2.new(0, 104,0, 22)
+  
+ UICorner_5.Parent = VERSION_1 
+ UICorner_5.CornerRadius = UDim.new(0,5) 
+  
+ VERSIONTxt_1.Name = "VERSIONTxt" 
+ VERSIONTxt_1.Parent = VERSION_1 
+ VERSIONTxt_1.AnchorPoint = Vector2.new(0.5, 0.5) 
+ VERSIONTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255) 
+ VERSIONTxt_1.BackgroundTransparency = 1 
+ VERSIONTxt_1.BorderColor3 = Color3.fromRGB(27,42,53) 
+ VERSIONTxt_1.BorderSizePixel = 0 
+ VERSIONTxt_1.Position = UDim2.new(0.5, 0,0.5, 0) 
+ VERSIONTxt_1.Size = UDim2.new(0, 104,0, 22)
+ VERSIONTxt_1.Font = Enum.Font.Gotham 
+ VERSIONTxt_1.Text = "Version: v1.0.2" 
+ VERSIONTxt_1.TextColor3 = Color3.fromRGB(255,255,255) 
+ VERSIONTxt_1.TextSize = 13 
+  
+ while true do 
+         local TimeInUnix = os.time() 
+         local stringToFormat = "%I:%M %p" 
+         local result = os.date(stringToFormat, TimeInUnix) 
+         TimeTxt_1.Text = result 
+         wait(1) 
+ end
