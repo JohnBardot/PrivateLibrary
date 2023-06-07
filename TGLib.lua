@@ -1,3 +1,6 @@
+local TweenService = game:GetService("TweenService")
+local Player = game.Players.LocalPlayer
+
 local Library = {}
 function Library:CreateWindow(WinName)
 
