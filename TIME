@@ -138,7 +138,7 @@ VERSIONTxt_1.BorderSizePixel = 0
 VERSIONTxt_1.Position = UDim2.new(0.5, 0,0.5, 0)
 VERSIONTxt_1.Size = UDim2.new(0, 104,0, 28)
 VERSIONTxt_1.Font = Enum.Font.Gotham
-VERSIONTxt_1.Text = "Version: v1.0.1"
+VERSIONTxt_1.Text = "Version: v1.0.2"
 VERSIONTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
 VERSIONTxt_1.TextSize = 13
 
