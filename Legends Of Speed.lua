@@ -2819,3 +2819,7 @@ Section7:CreateLabel("Rebirth Amount - Pet Rarity")
   Section10:CreateButton("3703079796",function()  
   
   end) 
+  Section10:CreateLabel("𝘿𝙚𝙭𝙭𝙭#0248") 
+  Section10:CreateButton("2429408810",function()  
+  
+  end) 
