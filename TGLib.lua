@@ -427,66 +427,79 @@ UICorner_12.CornerRadius = UDim.new(0,5)
 
 local Elements = {}
 function Elements:CreateButton(ButName,Callback)
- Callback = Callback or function() end    
-local BtnFrame_1 = Instance.new("Frame")
+				Callback = Callback or function() end 
+				
+				local targetTransparency1 = 0.5
+				local targetTransparency2 = 1
+				
+				local BtnFrame_1 = Instance.new("Frame")
 
-local UICorner_6 = Instance.new("UICorner")
+				local UICorner_6 = Instance.new("UICorner")
+				local UICorner_666 = Instance.new("UICorner")
 
-local BtnBtn_1 = Instance.new("TextButton")
+				local BtnBtn_1 = Instance.new("TextButton")
 
-BtnFrame_1.Name = "BtnFrame"
+				BtnFrame_1.Name = "BtnFrame"
 
-BtnFrame_1.Parent = ElementHolder_1
+				BtnFrame_1.Parent = ElementHolder_1
 
-BtnFrame_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
+				BtnFrame_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
 
-BtnFrame_1.BorderColor3 = Color3.fromRGB(27,42,53)
+				BtnFrame_1.BorderColor3 = Color3.fromRGB(27,42,53)
 
-BtnFrame_1.BorderSizePixel = 0
+				BtnFrame_1.BorderSizePixel = 0
 
-BtnFrame_1.Size = UDim2.new(0, 184,0, 21)
-
-
-
-UICorner_6.Parent = BtnFrame_1
-
-UICorner_6.CornerRadius = UDim.new(0,5)
-
+				BtnFrame_1.Size = UDim2.new(0, 184,0, 21)
 
 
-BtnBtn_1.Name = "BtnBtn"
 
-BtnBtn_1.Parent = BtnFrame_1
+				UICorner_6.Parent = BtnFrame_1
 
-BtnBtn_1.Active = true
-
-BtnBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-
-BtnBtn_1.BackgroundTransparency = 1
-
-BtnBtn_1.BorderColor3 = Color3.fromRGB(27,42,53)
-
-BtnBtn_1.BorderSizePixel = 0
-
-BtnBtn_1.Size = UDim2.new(0, 184,0, 21)
-
-BtnBtn_1.Font = Enum.Font.Gotham
-
-BtnBtn_1.Text = ButName
-
-BtnBtn_1.TextColor3 = Color3.fromRGB(255,255,255)
-
-BtnBtn_1.TextSize = 12
+				UICorner_6.CornerRadius = UDim.new(0,5)
 
 
- BtnBtn_1.MouseButton1Click:Connect(function()  
- BtnBtn_1.BackgroundTransparency = 0.7
- wait(0.1)
- BtnBtn_1.BackgroundTransparency = 1
-                  Callback()  
-  end) 
-  
-end
+
+				BtnBtn_1.Name = "BtnBtn"
+
+				BtnBtn_1.Parent = BtnFrame_1
+
+				BtnBtn_1.Active = true
+
+				BtnBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+
+				BtnBtn_1.BackgroundTransparency = 1
+
+				BtnBtn_1.BorderColor3 = Color3.fromRGB(27,42,53)
+
+				BtnBtn_1.BorderSizePixel = 0
+
+				BtnBtn_1.Size = UDim2.new(0, 184,0, 21)
+
+				BtnBtn_1.Font = Enum.Font.Gotham
+
+				BtnBtn_1.Text = ButName
+
+				BtnBtn_1.TextColor3 = Color3.fromRGB(255,255,255)
+
+				BtnBtn_1.TextSize = 12
+
+				UICorner_666.Parent = BtnBtn_1
+
+				UICorner_666.CornerRadius = UDim.new(0,5)
+				
+				local tweenInfo = TweenInfo.new(0.5)
+				
+				local tween1 = TweenService:Create(BtnBtn_1, tweenInfo, {BackgroundTransparency = targetTransparency1})
+				local tween2 = TweenService:Create(BtnBtn_1, tweenInfo, {BackgroundTransparency = targetTransparency2})
+				
+				BtnBtn_1.MouseButton1Click:Connect(function()  
+					tween1:Play()
+					wait(0.1)
+					tween2:Play()
+					Callback()  
+				end) 
+
+			end
 function Elements:CreateLabel(LabName)
  
 local BtnFrame_99= Instance.new("Frame")
@@ -544,119 +557,126 @@ end
 
 
 function Elements:CreateToggle(TogName,Callback)
-                         local toggled = false  
-                          local debounce = false
-local TogFrame_1 = Instance.new("Frame")
+				local toggled = false  
+				local debounce = false
+				local targetColor1 = Color3.fromRGB(208, 208, 208)
+				local targetColor2 = Color3.fromRGB(28,28,28)
+				local tweenInfo = TweenInfo.new(0.5)
+				
+				local TogFrame_1 = Instance.new("Frame")
 
-local UICorner_7 = Instance.new("UICorner")
+				local UICorner_7 = Instance.new("UICorner")
 
-local BtnBtn_2 = Instance.new("TextButton")
+				local BtnBtn_2 = Instance.new("TextButton")
 
-local UIPadding_4 = Instance.new("UIPadding")
+				local UIPadding_4 = Instance.new("UIPadding")
 
-local TogglerHolder_1 = Instance.new("Frame")
+				local TogglerHolder_1 = Instance.new("Frame")
 
-local UICorner_8 = Instance.new("UICorner")
+				local UICorner_8 = Instance.new("UICorner")
 
-local UIPadding_5 = Instance.new("UIPadding")
+				local UIPadding_5 = Instance.new("UIPadding")
 
-TogFrame_1.Name = "TogFrame"
+				TogFrame_1.Name = "TogFrame"
 
-TogFrame_1.Parent = ElementHolder_1
+				TogFrame_1.Parent = ElementHolder_1
 
-TogFrame_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
+				TogFrame_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
 
-TogFrame_1.BorderColor3 = Color3.fromRGB(27,42,53)
+				TogFrame_1.BorderColor3 = Color3.fromRGB(27,42,53)
 
-TogFrame_1.BorderSizePixel = 0
+				TogFrame_1.BorderSizePixel = 0
 
-TogFrame_1.Size = UDim2.new(0, 184,0, 21)
-
-
-
-UICorner_7.Parent = TogFrame_1
-
-UICorner_7.CornerRadius = UDim.new(0,5)
+				TogFrame_1.Size = UDim2.new(0, 184,0, 21)
 
 
 
-BtnBtn_2.Name = "BtnBtn"
+				UICorner_7.Parent = TogFrame_1
 
-BtnBtn_2.Parent = TogFrame_1
-
-BtnBtn_2.Active = true
-
-BtnBtn_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
-
-BtnBtn_2.BackgroundTransparency = 1
-
-BtnBtn_2.BorderColor3 = Color3.fromRGB(27,42,53)
-
-BtnBtn_2.BorderSizePixel = 0
-
-BtnBtn_2.Size = UDim2.new(0, 184,0, 21)
-
-BtnBtn_2.Font = Enum.Font.Gotham
-
-BtnBtn_2.Text = TogName
-
-BtnBtn_2.TextColor3 = Color3.fromRGB(255,255,255)
-
-BtnBtn_2.TextSize = 12
-
-BtnBtn_2.TextXAlignment = Enum.TextXAlignment.Left
+				UICorner_7.CornerRadius = UDim.new(0,5)
 
 
 
-UIPadding_4.Parent = BtnBtn_2
+				BtnBtn_2.Name = "BtnBtn"
 
-UIPadding_4.PaddingLeft = UDim.new(0,6)
+				BtnBtn_2.Parent = TogFrame_1
+
+				BtnBtn_2.Active = true
+
+				BtnBtn_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+
+				BtnBtn_2.BackgroundTransparency = 1
+
+				BtnBtn_2.BorderColor3 = Color3.fromRGB(27,42,53)
+
+				BtnBtn_2.BorderSizePixel = 0
+
+				BtnBtn_2.Size = UDim2.new(0, 184,0, 21)
+
+				BtnBtn_2.Font = Enum.Font.Gotham
+
+				BtnBtn_2.Text = TogName
+
+				BtnBtn_2.TextColor3 = Color3.fromRGB(255,255,255)
+
+				BtnBtn_2.TextSize = 12
+
+				BtnBtn_2.TextXAlignment = Enum.TextXAlignment.Left
 
 
 
-TogglerHolder_1.Name = "TogglerHolder"
+				UIPadding_4.Parent = BtnBtn_2
 
-TogglerHolder_1.Parent = TogFrame_1
-
-TogglerHolder_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
-
-TogglerHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
-
-TogglerHolder_1.Position = UDim2.new(0.912773252, 0,0.0952381045, 0)
-
-TogglerHolder_1.Size = UDim2.new(0, 16,0, 16)
+				UIPadding_4.PaddingLeft = UDim.new(0,6)
 
 
 
-UICorner_8.Parent = TogglerHolder_1
+				TogglerHolder_1.Name = "TogglerHolder"
 
-UICorner_8.CornerRadius = UDim.new(0,5)
+				TogglerHolder_1.Parent = TogFrame_1
+
+				TogglerHolder_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
+
+				TogglerHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+
+				TogglerHolder_1.Position = UDim2.new(0.912773252, 0,0.0952381045, 0)
+
+				TogglerHolder_1.Size = UDim2.new(0, 16,0, 16)
 
 
 
-UIPadding_5.Parent = TogFrame_1
+				UICorner_8.Parent = TogglerHolder_1
 
-UIPadding_5.PaddingRight = UDim.new(0,3)
-  
-                         BtnBtn_2.MouseButton1Click:Connect(function()  
-                                  if debounce == false then  
-                                          if toggled == false then  
-                                                  debounce = true  
-                                                  TogglerHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-                                                  debounce = false  
-                                                  toggled = true  
-                                                  pcall(Callback, toggled)  
-                                          elseif toggled == true then  
-                                                  debounce = true   
-                                                 TogglerHolder_1.BackgroundColor3 = Color3.fromRGB(28,28,28)  
-                                                  debounce = false  
-                                                  toggled = false  
-                                                  pcall(Callback, toggled)  
-                                          end  
-                                  end  
-                          end)
-                          
-end
+				UICorner_8.CornerRadius = UDim.new(0,5)
+
+
+
+				UIPadding_5.Parent = TogFrame_1
+
+				UIPadding_5.PaddingRight = UDim.new(0,3)
+				
+				local tweenon = TweenService:Create(TogglerHolder_1, tweenInfo, {BackgroundColor3 = targetColor1})
+				local tweenoff = TweenService:Create(TogglerHolder_1, tweenInfo, {BackgroundColor3 = targetColor2})
+				
+				BtnBtn_2.MouseButton1Click:Connect(function()  
+					if debounce == false then  
+						if toggled == false then  
+							debounce = true  
+							tweenon:Play()
+							debounce = false  
+							toggled = true  
+							pcall(Callback, toggled)  
+						elseif toggled == true then  
+							debounce = true   
+							tweenoff:Play()
+							debounce = false  
+							toggled = false  
+							pcall(Callback, toggled)  
+						end  
+					end  
+				end)
+
+			end
 function Elements:CreateBox(BoxName,Callback)
 local BoxFrame_1 = Instance.new("Frame")
 
